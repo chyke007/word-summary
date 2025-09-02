@@ -26,7 +26,6 @@ async def lifespan(app: FastAPI):
     """Initialize database on startup"""
     await db_service.init_db()
     yield
-    # Cleanup code can go here if needed
 
 # Initialize services
 app = FastAPI(title="LLM Knowledge Extractor", version="1.0.0", lifespan=lifespan)
@@ -61,7 +60,7 @@ async def analyze_text(request: TextAnalysisRequest):
         }
         
         # Save to database
-        analysis_id = await db_service.save_analysis(request.text, analysis_result)
+        await db_service.save_analysis(request.text, analysis_result)
         
         # Return response
         return TextAnalysisResponse(

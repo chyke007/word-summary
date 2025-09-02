@@ -235,6 +235,18 @@ word-summary/
 - `DEBUG`: Enable debug mode (default: False)
 
 
+### Demo (UI)
+
+Analysis Result: 
+
+<img src="https://github.com/chyke007/word-summary/blob/main/sample/analysis_result.png" alt="Analysis Result" width="700" />
+
+
+Search Result:
+
+<img src="https://github.com/chyke007/word-summary/blob/main/sample/search_result.png" alt="Search Result" width="700" />
+
+
 ### Sample API Calls
 
 ```bash
@@ -253,23 +265,6 @@ curl -X POST "http://localhost:8000/search" \
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new functionality
-5. Submit a pull request
-
-## 🆘 Support
-
-If you encounter any issues:
-
-1. Check the logs for error messages
-2. Ensure all dependencies are installed
-3. Verify your OpenAI API key (if using real services)
-4. Try running in mock mode first
-5. Check the troubleshooting section above
 
 ---
 
